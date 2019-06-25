@@ -1,0 +1,91 @@
+*************************************
+    Door Jedi Program #1 Go Go Go
+*************************************
+
+The goal of this program is to teach you how to transition from having an idea
+in your head of what a program should do into actually implementing it.
+
+For this assignment you will need to do the following to earn your A:
+
+1) Think about what goes into an automatic door opener at a grocery store or
+gas station. I've given you a simple FSA diagram showing the transitions
+between four states. You must think up and add at least two more states to the
+conceptual diagram, and draw arrows showing how you can transition into and out
+of the states.
+
+To get credit: Have at least six states with transitions between them.
+
+2) You must sketch out your A) States and B) Transitions between States on a
+sheet of paper. Circle the starting state. (For example: "CLOSED".) Make sure
+each transition is labelled with what event must take place to cause the
+transition, like "Door on Fire" or "Door hit something" or "Sensor detected
+door fully open".
+
+To get credit: Turn in your paper diagram to me
+
+3) Write code to implement your diagram. Every state and transition on your
+paper will become code on your project. States will probably be held in a variable
+(which I call "state" in your sample program, very creative I know), and
+transitions will be events. By default, the user will enter an event from the
+keyboard, and then your system must respond to the event and print out what
+state the system is in.
+
+For example, if the user enters "lock" (and you have a
+LOCKED state) then this represents the owner locking the door for the night,
+and you need to stop opening the door every time a person walks up. It will
+probably ignore all events other than "unlock".
+
+Some sample events you might want to handle:
+"Person" (a person walks up to the door)
+"Fire" (the door has caught on fire)
+"Lock" (the owner locks the door for the night)
+"Unlock" (the owner unlocks the door in the morning)
+Etc. 
+
+What events you actually implement depends on your state diagram.
+
+To get credit: implement every state and transition on your diagram.
+
+4) I have given you a function that waits three seconds. Your door must take
+three seconds to open, stay open three seconds, and three seconds to close.
+This function will let your code take the correct amount of time (and not just
+print out opening... open... closing... closed all at once).
+
+The wait function must NOT be used in the interrupt handler, or you lose this
+point.
+
+To get credit: Use the wait_three_seconds() function properly.
+
+Extra credit: If you want to be extra cool, modify the wait_three_seconds()
+function so that if someone walks through the door when it is open, it will reset the timer.
+
+5) You must use an interrupt handler.
+
+I have given you a function that will be called any time the user hits
+ctrl-c: signal_handler(). If you look at the top of main(), you'll see that I
+set it up using the signal() function so that if an interrupt signal (ctrl-c)
+is sent to the program, rather than killing the program, it will instead call
+the signal handler.
+
+Signal_handler() gets passed the number of the signal, in case you
+want to handle multiple signals - for example, you might want to make it so
+that ctrl-c represents a person coming in through the door, but a ctrl-z
+represents the door catching on fire. (Ctrl-c will send a 2, for SIGINT, and
+ctrl-z will send a 20 for SIGTSTP.) 
+
+We need this because otherwise our door will be very boring - send a person in
+through the front door, let it cycle through opening, open, closing, yawn,
+closed. With a signal handler, now we can have another person enter the door
+at any time, and you must handle it correctly.
+
+To get credit: Implement a single signal (ctrl-c).
+Extra credit: Implement multiple signals.
+
+****************************************
+
+Extra credit (+10%):
+Do the same thing, but implement a gas pump. It should have at least 10
+states, representing swiping a credit card, taking the dispenser off the hook, 
+selecting an octane, and so forth.
+
+****************************************

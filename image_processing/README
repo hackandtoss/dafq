@@ -1,0 +1,47 @@
+====================================
+ Image Processing Happy Fun Time #34
+====================================
+
+Introduction: This is an open-ended assignment in which you and your partner
+will be able to exercise both your programming skills and artistic side.
+
+I have given you operational code that will apply two image filters to an
+image. You should compile it (using "make" instead of g++) and run it (a.out
+chenonceau.jpg) to get a feel for how it works: it will output the following:
+1) The time it took to load the image
+2) The time it took to darken it by 50%
+3) The time it took to sepia-tone it
+4) The time it took to write the file to disk
+
+The output file is called output.jpg (and isn't especially high quality).
+
+You can use an scp client (like WinSCP if you are on windows) to transfer
+files to and from your directory and test the code on any image you upload,
+and then download output.jpg and view the result.
+
+Your tasks:
+
+1) First, you must think of some other sort of image filter you might want to
+write, and then write it. Replace either the darken code or the sepia code
+with your new filter. The cooler the filter, the more points you will get.
+
+2) Second, do the same for the other filter.
+
+3) Third, you must draw your logo somewhere on the screen as a watermark to
+show who made the image. This can be as simple as doing a small red triangle in
+the bottom left corner, or as complicated as a signature. It should overwrite
+whatever image data was there before, and be visible to the naked eye.
+Extra Credit: More compilicated logos can be worth more points
+
+4) Finally, you must hide a secret message somewhere in the image, with a
+hashtag prepending it. The message itself can be your choice, but should be
+something like #free_harambe or anything of similar length. You can hide it
+however you want, but the message must be recoverable by a third party
+somehow.
+
+Grading:
+You will get one grade for each bullet point above, up to a maximum of a B.
+
+In order to get an A, you must do something awesome on one of the bullet
+points above. Doesn't matter which. Just be creative. If you're extra
+awesome, you can get an A+, or an A++, etc.

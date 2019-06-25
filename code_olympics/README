@@ -1,0 +1,28 @@
+Welcome to the Spring Olympics!
+
+Inside of each of five sections you will find a place labelled "YOU:". You
+must fill in the missing code there with the code described. All of your
+code will be in each of the five functions up at the top of the code.
+
+DO NOT MODIFY ANY CODE IN THE MAIN FUNCTION
+ONLY MODIFY CODE IN THE FIVE FUNCTIONS SET UP FOR YOU (first, second, etc.)
+
+If you are curious what the code will look like when it is running properly,
+here is some sample input and output. The first number is the choice of event,
+the following numbers are typed in at the prompts (which are not shown):
+----------------------------------------
+Event 1 input: 1 3 4
+Event 1 ouput: The result is: 25
+----------------------------------------
+Event 2 input: 2 2 3
+Event 2 output: The result is: 18
+----------------------------------------
+Event 3 input: 3 1 2 3 4 5 0
+Event 3 output: The sum of all the numbers is: 15
+----------------------------------------
+Event 4 input: 4 1 2 3 4 5 7 0
+Event 4 ouput: The number of odd numbers typed in is: 4
+----------------------------------------
+Event 5 input: 5 5
+Event 5 output: 0 1 2 3 4
+----------------------------------------

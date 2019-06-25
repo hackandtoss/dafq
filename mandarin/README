@@ -1,0 +1,57 @@
+For this program, you will learn to combine for loops with if statements, and
+use modulus as well.
+
+Step 1. Ask the user how high they want the program to count. Output exactly
+this (capitalization and everything):
+Please enter a number that you want to count up to in Mandarin.
+
+Step 2. Ask the user what number they want to start with. Output:
+Please enter what number to start with:
+
+Step 3. Ask the user what step size they want to count up by. Output:
+What step size do you want to use?
+
+After each step, you will input an integer from the standard input (i.e. you
+will cin >> into an integer).
+
+Your program will then output the numbers in both Arabic numerals and in
+Mandarin.
+
+For example, if you want to count to 10, starting at one, with a step size of
+two, your program will output this:
+1 yi
+3 san
+5 wu
+7 qi
+9 jiu
+
+We will not output anything past this, since the next number is over 10.
+
+Mandarin Dictionary:
+0 - ling
+1 - yi
+2 - er
+3 - san
+4 - se
+5 - wu
+6 - liu
+7 - qi
+8 - ba
+9 - jiu
+10 - shi
+
+To count numbers over 10, use the following rules:
+
+For numbers 11 through 19, it is shi followed by the digit above:
+11 - shi yi
+12 - shi er
+13 - shi san
+etc.
+
+For numbers 20 through 99, it is the first digit followed by shi followed by
+the second digit (except 0):
+33 - san shi san
+52 - wu shi er
+80 - ba shi
+
+Don't worry about numbers over 99.
