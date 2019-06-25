@@ -1,2 +1,2 @@
 # CSCI40
-yes
+Assignments from first semister of Computer Science.
